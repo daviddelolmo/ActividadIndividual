@@ -1,0 +1,98 @@
+/* Estilo para el carrito */
+.carrito {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  display: none; /* Ocultar el carrito por defecto */
+}
+
+/* Cuando el carrito esté visible, mostrarlo */
+.carrito-visible {
+  display: block;
+}
+
+.carrito h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.carrito ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.carrito li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.carrito button {
+  background-color: #f1c98d;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carrito button:hover {
+  background-color: #d9b37d;
+}
+
+.carrito button:focus {
+  outline: none;
+}
+
+.carrito button:disabled {
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.carrito p {
+  margin: 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.carrito ul li:last-child {
+  border-bottom: none;
+}
+
+/* Overlay de fondo para cuando el carrito está visible */
+.carrito-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none; /* Ocultar el overlay por defecto */
+}
+
+/* Mostrar overlay cuando el carrito está visible */
+.carrito-overlay-visible {
+  display: block;
+}

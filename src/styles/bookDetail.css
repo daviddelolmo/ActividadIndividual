@@ -1,0 +1,14 @@
+.book-detail {
+  padding: 20px;
+}
+
+.book-detail h1 {
+  font-size: 2rem;
+}
+
+.book-detail button {
+  padding: 10px 20px;
+  background-color: #f1c98d;
+  border: none;
+  cursor: pointer;
+}
