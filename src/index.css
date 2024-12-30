@@ -1,0 +1,39 @@
+/* index.css */
+
+/* Reinicio de márgenes y paddings predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos para la clase App, que engloba la app entera */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Aplicamos un fondo suave y un poco de espacio */
+h1, h2, h3, p {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ajuste de las páginas para un layout fluido */
+main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}

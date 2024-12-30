@@ -1,0 +1,19 @@
+/* Envoltorio principal para la app */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo de fondo del cuerpo de la aplicación */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+}
+
+/* Estilos para las vistas en pantalla completa */
+main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}
